@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Олег Кущ](https://up.htmlacademy.ru/htmlcss/22/user/848615).
-* Наставник: `Михаил Поданев`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
