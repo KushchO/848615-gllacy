@@ -23,8 +23,31 @@
                 <li><a href="#">О компании</a></li>
             </ul>
             <ul class="main header-user-navigation">
-                <li class="main-search"><a href="#">Поиск</a></li>
-                <li class="main-search"><a href="#">Вход</a></li>
+                <li class="main-search">
+                  <a href="#">Поиск</a>
+                  <div class="modal form-wrap">
+                      <form class="search-form" action="https://echo.htmlacademy.ru">
+                        <input type="search" name="search-form" placeholder="Что ищем?"/>
+                      </form>
+                  </div>
+                </li>
+                <li class="main-search">
+                  <a href="#">Вход</a>
+                  <div class="modal form-authorization">
+                      <h2 class="visually-hidden">Форма авторизации на сайте Gllacy</h2>
+                      <form class="authorization-form">
+                        <label for="auth-e-mail-field" class="visually-hidden">Электронная почта</label>
+                        <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
+                        <label for="auth-password-field" class="visually-hidden">Пароль</label>
+                        <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
+                        <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
+                      </form>
+                      <ul class="additional-links">
+                        <li><a href="#"></a>Забыли пароль?</li>
+                        <li><a href="#"></a>Новая регистрация</li>
+                      </ul>
+                  </div>
+                </li>
                 <li class="main-search"><a href="#">Корзина</a></li>
             </ul>
         </nav>
@@ -32,12 +55,6 @@
             c 10 до 20, ежедневно<br>
             <b>8 812 450 25 25</b>
         </p>
-        <div class="modal form-wrap">
-            <form class="search-form"></form>
-        </div>
-        <div class="modal form-authorization">
-            <form class="authorization-form"></form>
-        </div>
     </header>
     <main>
         <section class="main featured-products">
@@ -180,8 +197,13 @@
     <section class="modal main-feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="highlighted">Мы обязательно вам ответим!</p>
-        <form class="feedback-form"></form>
-        <button type="button" class="modal close">X</button>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+          <input type="text" name="feedback-form" placeholder="Как вас зовут?">
+          <input type="email" name="feedback-form" placeholder="Ваша почта для ответа">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Ваша почта для ответа"></textarea>
+          <button type="submit" class="btn feedback-btn">Отправить</button>
+          <button type="button" class="modal close">X</button>
+        </form>
     </section>
 </body>
 

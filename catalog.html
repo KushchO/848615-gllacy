@@ -23,21 +23,68 @@
                 <li><a href="#">О компании</a></li>
             </ul>
             <ul class="main header-user-navigation">
-                <li class="main-search"><a href="#">Поиск</a></li>
-                <li class="main-search"><a href="#">Вход</a></li>
-                <li class="main-search"><a href="#">Корзина</a></li>
+                <li class="main-search">
+                  <a href="#">Поиск</a>
+                  <div class="modal form-wrap">
+                      <form class="search-form" action="https://echo.htmlacademy.ru">
+                        <input type="search" name="search-form" placeholder="Что ищем?"/>
+                      </form>
+                  </div>
+                </li>
+                <li class="main-search">
+                  <a href="#">Вход</a>
+                  <div class="modal form-authorization">
+                      <h2 class="visually-hidden">Форма авторизации на сайте Gllacy</h2>
+                      <form class="authorization-form">
+                        <label for="auth-e-mail-field" class="visually-hidden">Электронная почта</label>
+                        <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
+                        <label for="auth-password-field" class="visually-hidden">Пароль</label>
+                        <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
+                        <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
+                      </form>
+                      <ul class="additional-links">
+                        <li><a href="#"></a>Забыли пароль?</li>
+                        <li><a href="#"></a>Новая регистрация</li>
+                      </ul>
+                  </div>
+                </li>
+                <li class="main-search"><a href="#">Корзина</a>
+                  <table class="cart-product-table">
+                    <tr>
+                      <td>
+                        <button class="delete-btn" type="submit" aria-label="удалить строку">Х</button>
+                      </td>
+                      <td>
+                        <img src="img/orange-ice.jpg" class="cart-product-img" alt="Пломбир с апельсиновым джемом" width="33p" height="33">
+                      </td>
+                      <td>
+                        <p class="cart-product-info">Пломбир с апельсиновым джемом</p>
+                      </td>
+                      <td><p class="cart-product-weight-price">1,5 кг х 200 руб.</p></td>
+                      <td><span class="cart-product-total-price">450 руб.</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="delete-btn" type="submit" aria-label="удалить строку">Х</button>
+                      </td>
+                      <td>
+                          <img src="img/strawberry-ice.jpg" class="cart-product-img" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33p" height="33">
+                      </td>
+                      <td><p class="cart-product-info">Клубничный пломбир с присыпкой  из белого шоколада</p></td>
+                      <td><p class="cart-product-weight-price">1,5 кг х 300 руб.</p></td>
+                      <td><span class="cart-product-total-price">300 руб.</span></td>
+                    </tr>
+                  </table>
+                  <hr>
+                  <p class="cart-overall-price"><span>Итого</span><span class="overall-price">750 руб.</p>
+                    <button type="button" class="btn">Оформить заказ</button>
+                </li>
             </ul>
         </nav>
         <p class="main header-info">
             c 10 до 20, ежедневно<br>
             <b>8 812 450 25 25</b>
         </p>
-        <div class="modal form-wrap">
-            <form class="search-form"></form>
-        </div>
-        <div class="modal form-authorization">
-            <form class="authorization-form"></form>
-        </div>
     </header>
     <nav class="catalog breadcrumbs">
         <h3 class="visually-hidden">Адрес сайта:</h3>
@@ -52,7 +99,64 @@
             <h2 class="catalog-page heading">Сливочное мороженное</h2>
             <section class="sort-filter">
                 <h3 class="visually-hidden">Фильтры товаров</h3>
-                <form class="sort-filter-form"></form>
+                <form class="sort-filter-form">
+                  <fieldset>
+                    <legend >Сортировка</legend>
+                    <select name="sort-filter" id="sort-filter-form" >
+                      <option name="sort-filter-opt" value="по популярности">по популярности</option>
+                      <option name="sort-filter-opt" value="сначала недорогие">сначала недорогие</option>
+                      <option name="sort-filter-opt" value="сначала дорогие">сначала дорогие</option>
+                      <option name="sort-filter-opt" value="по жирности">по жирности</option>
+                    </select>
+                    <label for="sort-price-range">Цена: 100 руб. – 500 руб.</label>
+                    <input id="sort-price-range" type="range" min="100" max="500">
+                    <fieldset>
+                      <legend>По жирности</legend>
+                      <ul>
+                        <li>
+                          <label for="sort-fat-0%">0%</label>
+                          <input id="sort-fat-0%" type="radio" value="0%">
+                        </li>
+                        <li>
+                          <label for="sort-fat-lower10%">до 10%</label>
+                          <input id="sort-fat-lower10%" type="radio" value="до 10%">
+                        </li>
+                        <li>
+                          <label for="sort-fat-lower30%">до 30%</label>
+                          <input id="sort-fat-lower30%" type="radio" value="до 30%">
+                        </li>
+                        <li>
+                          <label for="sort-fat-more30%">выше 30%</label>
+                          <input id="sort-fat-more30%" type="radio" value="выше 30%">
+                        </li>
+                      </ul>
+                    </fieldset>
+
+                  </fieldset>
+                  <fieldset>
+                    <legend>Наполнители</legend>
+                    <ul>
+                      <li>
+                        <label for="addings-choco">шоколадные</label>
+                        <input id="addings-choco" type="checkbox" name="sort-form-addings" value="choco">
+                      </li>
+                      <li>
+                        <label for="addings-shugar">сахарные присыпки</label>
+                        <input id="addings-shugar" type="checkbox" name="sort-form-addings" value="sugar">
+                      </li>
+                      <li>
+                        <label for="addings-fruits">фрукты</label><input id="addings-fruits" type="checkbox" name="sort-form-addings" value="fruits"></li>
+                      <li>
+                        <label for="addings-syrup">сиропы</label>
+                        <input id="addings-syrup" type="checkbox" name="sort-form-addings" value="syrup">
+                      </li>
+                      <li><label for="addings-ja">джемы</label>
+                        <input id="addings-jam" type="checkbox" name="sort-form-addings" value="jam">
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button type="submit" class="btn sort-form-btn">Применить</button>
+                </form>
         </section>
 
         <section class="cream product-grid">
