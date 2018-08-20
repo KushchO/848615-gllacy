@@ -102,7 +102,7 @@
             <h2 class="catalog-page heading">Сливочное мороженное</h2>
             <section class="sort-filter">
                 <h3 class="visually-hidden">Фильтры товаров</h3>
-                <form class="sort-filter-form">
+                <form class="sort-filter-form" action="https://echo.htmlacademy.ru" method="POST">
                   <fieldset>
                     <legend >Сортировка</legend>
                     <select name="sort-filter" id="sort-filter-form" >
@@ -118,19 +118,19 @@
                       <ul>
                         <li>
                           <label for="sort-fat-0%">0%</label>
-                          <input id="sort-fat-0%" type="radio" value="0%">
+                          <input id="sort-fat-0%" name="sort-fat" type="radio" value="0%">
                         </li>
                         <li>
                           <label for="sort-fat-lower10%">до 10%</label>
-                          <input id="sort-fat-lower10%" type="radio" value="до 10%">
+                          <input id="sort-fat-lower10%" name="sort-fat" type="radio" value="до 10%">
                         </li>
                         <li>
                           <label for="sort-fat-lower30%">до 30%</label>
-                          <input id="sort-fat-lower30%" type="radio" value="до 30%">
+                          <input id="sort-fat-lower30%" name="sort-fat" type="radio" value="до 30%">
                         </li>
                         <li>
                           <label for="sort-fat-more30%">выше 30%</label>
-                          <input id="sort-fat-more30%" type="radio" value="выше 30%">
+                          <input id="sort-fat-more30%" name="sort-fat" type="radio" value="выше 30%">
                         </li>
                       </ul>
                     </fieldset>
@@ -141,11 +141,11 @@
                     <ul>
                       <li>
                         <label for="addings-choco">шоколадные</label>
-                        <input id="addings-choco" type="checkbox" name="sort-form-addings" value="choco">
+                        <input id="addings-choco" type="checkbox" name="sort-form-addings" value="choco" checked>
                       </li>
                       <li>
                         <label for="addings-shugar">сахарные присыпки</label>
-                        <input id="addings-shugar" type="checkbox" name="sort-form-addings" value="sugar">
+                        <input id="addings-shugar" type="checkbox" name="sort-form-addings" value="sugar" checked>
                       </li>
                       <li>
                         <label for="addings-fruits">фрукты</label><input id="addings-fruits" type="checkbox" name="sort-form-addings" value="fruits"></li>
@@ -153,7 +153,7 @@
                         <label for="addings-syrup">сиропы</label>
                         <input id="addings-syrup" type="checkbox" name="sort-form-addings" value="syrup">
                       </li>
-                      <li><label for="addings-ja">джемы</label>
+                      <li><label for="addings-jam">джемы</label>
                         <input id="addings-jam" type="checkbox" name="sort-form-addings" value="jam">
                       </li>
                     </ul>
@@ -260,6 +260,7 @@
                         <p class="price">420₽ <span class="weight">кг</span></p>
                         <a href="#">
                             Сливочное с Мятным сиропом
+                        </a>
                     </li>
                 </ul>
             </section>
