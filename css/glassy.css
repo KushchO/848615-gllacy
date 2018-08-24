@@ -1,0 +1,518 @@
+/*Базовая стилизация*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font: 16px 'Roboto', sans-serif;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: bold;
+
+  background-color: #849d8f;
+}
+
+a{
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a:hover,
+a:active {
+  color: #ffbc9e;
+}
+
+input,
+textarea {
+  color: #323232;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Roboto', Arial, sans-serif;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  box-sizing: content-box;
+  padding: 1px;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: 999999;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+input:hover,
+textarea:hover {
+  border: 2px solid #9a9a9a;
+  padding: 0;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #2e88e4;
+  padding: 0;
+
+}
+
+.form-wrap {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.header-user-navigation a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.modal a{
+  color: #000000;
+  background: transparent;
+}
+
+.modal a:hover{
+  color: #e84d37;
+}
+.modal a:active{
+  color: #e84d37;
+}
+
+.header-navigation li{
+  list-style: none;
+  background: transparent;
+}
+
+.catalog-link-1lv>a {
+  text-decoration: underline;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.catalog-link-1lv>a:hover {
+  background-color: #f7f6f3;
+  color: #323232;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+}
+
+.catalog-link-1lv>a:active {
+  background-color: #d07058;
+  text-decoration: none;
+}
+
+.catalog-second-level {
+  background-color: #f7f6f3;
+
+}
+
+.catalog-second-level a {
+  color: #323232;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.catalog-second-level a:hover {
+  background-color: #fbded8;
+}
+
+.catalog-second-level a:active {
+  background-color: #f6b5a5;
+
+}
+
+.catalog-second-level a:active {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.header-user-navigation li{
+  list-style: none;
+}
+
+.form-authorization .btn-link-container{
+  width:100px;
+  height: 45px;
+}
+
+
+
+.form-authorization button{
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.additional-links a{
+
+   font-size: 13px;
+  line-height: 24px;
+}
+
+.header-info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-info b{
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.featured-products .large-text {
+  font-size: 60px;
+  line-height: 61px;
+}
+
+.btn-link-container {
+  background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.btn-link-container:hover {
+  background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.btn-link-container:active {
+  background-image: linear-gradient( 0deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+.btn{
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  background: transparent;
+  border:none;
+  margin:auto;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hover-effect{
+  box-sizing: border-box;
+  padding-top: 10px;
+  width: 100%;
+  height :100%;
+}
+
+
+.hover-effect:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+}
+.take-offer-link:active {
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  color:#ffffff;
+}
+
+.featured-products .btn-link-container{
+  width: 280px;
+  height: 65px;
+}
+
+.featured-products .btn{
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.main li {
+  list-style: none;
+}
+
+.gift-offers h3{
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.gift-offers p {
+  font-size: 18px;
+}
+
+.free-raspberry {
+  background-image: url(../img/free-raspberry.jpg);
+  background-repeat: no-repeat;
+}
+
+.free-chocolate {
+  background-image: url(../img/free-chocolate.jpg);
+  background-repeat: no-repeat;
+}
+.free-raspberry .btn-link-container {
+  width: 165px;
+  height: 46px;
+}
+
+.free-chocolate .btn-link-container {
+  width: 189px;
+  height: 45px;
+}
+
+.price {
+  font-size: 45px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.weight {
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.gllacy-features {
+  background-image: url(../img/waffle.jpg);
+  background-repeat: no-repeat;
+  width: 1146px;
+}
+
+.gllacy-features h2 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.featured-blog-article h2 {
+  font-size: inherit;
+  line-height: inherit;
+  color: #323232;
+}
+
+.full-article-link {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.featured-blog-article a:hover,
+.featured-blog-article a:active
+ {
+  color: #e84d37;
+}
+
+.featured-blog-article {
+  background-color: #ffffff;
+  background-image: url(../img/blog-strawberry.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.e-mail-subscribe {
+  color: #5a5a5a;
+  background-image: url(../img/bg-post.svg);
+  background-repeat: no-repeat;
+  padding: 10px;
+  width: 540px;
+  height: 240px;
+}
+
+.e-mail-subscribe h2 {
+  margin-top: 0;
+}
+
+.e-mail-subscribe-wrapper {
+  background-color: #f8f7f4;
+}
+
+.e-mail-subscribe .btn-link-container{
+  width: 129px;
+  height: 44px;
+}
+
+.main-map .map-container {
+  width: 1200px;
+  height: 430px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-contacts {
+  color: #323232;
+  background-color: #fefefd;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main-contacts b{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-contacts  .btn-link-container{
+  width: 252px;
+  height: 44px;
+}
+
+.footer-navigation a {
+  font-size: 13px;
+  line-break: 18px;
+}
+
+.branding-text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.main-feedback p {
+  color: #323232;
+  font-size: 24px;
+  font-family: 28px;
+}
+.main-feedback  .btn-link-container {
+  width: 139px;
+  height: 44px;
+}
+
+.hit-products .btn-link-container,
+.product-grid .btn-link-container {
+  width: 200px;
+  height: 44px;
+}
+
+.product{
+  width: 293px;
+  //height: 405px;
+}
+
+.product .btn-link-container {
+  display: none;
+}
+
+.product:hover .btn-link-container{
+  display: block;
+}
+
+.product:hover {
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+/*Базовая стилизация каталога*/
+
+.pagination li {
+  list-style: none;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+
+.pagination a:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+ .current-page a,
+ .pagination a:active,
+ .current-page a:hover {
+  background-color: #ffffff;
+  color: #323232;
+  text-decoration: none;
+}
+
+.cart-product-table {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.lighter {
+  color: #999999;
+}
+
+.cart-overall-price {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.main-cart .btn-link-container {
+  width: 170px;
+  height: 44px;
+}
+
+.main-cart .btn{
+  background-color: transparent;
+}
+
+.sort-filter select{
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 194px;
+  height: 37px;
+  border-radius:  20px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sort-filter select:hover {
+  color: #323232;
+}
+
+
+.sort-filter legend,
+.sort-filter label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sort-filter fieldset {
+  border: none;
+}
+
+
+.sort-form-btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  width: 148px;
+  height: 41px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 18px;
+  outline: none;
+}
+
+.sort-form-btn:hover{
+  background-color: #fbfcfb;
+  color: #323232;
+}
+
+.sort-form-btn:active{
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.8);
+  border: none;
+  padding: 2px;
+}
+
+
+
+.Подложка {
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+  position: absolute;
+  left: 863px;
+  top: 2371px;
+  width: 144px;
+  height: 36px;
+  z-index: 50;
+}
