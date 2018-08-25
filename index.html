@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/glassy.css">
 </head>
 
@@ -45,11 +45,7 @@
               <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
               <label for="auth-password-field" class="visually-hidden">Пароль</label>
               <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
-              <div class="btn-link-container">
-                <div class="hover-effect">
-                  <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
-                </div>
-              </div>
+              <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
             </form>
             <ul class="additional-links">
               <li><a href="#">Забыли пароль?</a></li>
@@ -70,11 +66,8 @@
       <h2 class="visually-hidden">Лучшие товары</h2>
       <img class="first-featured" src="img/big-icecream.png" width="1045" height="881" alt="Мороженое:">
       <p class="large-text">Крем брюле и пломбир с малиновым Джемом</p>
-      <div class="btn-link-container">
-        <div class="hover-effect">
-          <a class="btn take-offer-link" href="#">Дайте оба!</a>
-        </div>
-      </div>
+      <a class="btn take-offer-link" href="#">Дайте оба!</a>
+
       <ul class="slider-switcher">
         <li>
           <button type="button" aria-label="Первый слайд: Крем брюле и пломбир с малиновым Джемом"></button>
@@ -91,20 +84,12 @@
       <div class="free-raspberry">
         <h3>Малинка даром!</h3>
         <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <div class="btn-link-container">
-          <div class="hover-effect">
-            <a class="btn take-offer" href="#">Хочу варенье!</a>
-          </div>
-        </div>
+        <a class="btn take-offer" href="#">Хочу варенье!</a>
       </div>
       <div class="free-chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <div class="btn-link-container">
-          <div class="hover-effect">
-            <a class="btn take-offer" href="#">Хочу шоколадки!</a>
-          </div>
-        </div>
+        <a class="btn take-offer" href="#">Хочу шоколадки!</a>
       </div>
     </section>
     <section class="main hit-products">
@@ -119,11 +104,7 @@
           <a href="#">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </a>
-          <div class="btn-link-container">
-            <div class="hover-effect">
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-            </div>
-          </div>
+          <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
         </li>
         <li class="product chocolate">
           <a href="#">
@@ -134,11 +115,7 @@
           <a href="#">
             Сливочно-кофейное с кусочками шоколада
           </a>
-          <div class="btn-link-container">
-            <div class="hover-effect">
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-            </div>
-          </div>
+          <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
         </li>
         <li class="product strawberry">
           <a href="#">
@@ -149,11 +126,7 @@
           <a href="#">
             Сливочно-клубничное с присыпкой из белого шоколада
           </a>
-          <div class="btn-link-container">
-            <div class="hover-effect">
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-            </div>
-          </div>
+          <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
         </li>
         <li class="product creme-brulee">
           <a href="#">
@@ -164,11 +137,7 @@
           <a href="#">
             Сливочное крем-брюле с карамельной подливкой
           </a>
-          <div class="btn-link-container">
-            <div class="hover-effect">
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-            </div>
-          </div>
+          <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
@@ -211,15 +180,10 @@
           у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form class="e-mail-subscribe-form" action="https://echo.htmlacademy.ru">
           <input type="email" name="e-mail-subscribe-field" placeholder="Электронная почта" aria-label="Ваш имейл для новоостей">
-          <div class="btn-link-container">
-            <div class="hover-effect">
-              <button type="submit" class="btn form-btn" aria-label="Подтвердить подписку">Отправить</button>
-            </div>
-          </div>
+          <button type="submit" class="btn form-btn" aria-label="Подтвердить подписку">Отправить</button>
         </form>
       </div>
     </section>
-
     <section class="main-map">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="map-container"></div>
@@ -233,11 +197,7 @@
           Санкт-Петербург Для заказов по телефону:
           <b>8 812 450-25-25</b>
           (с 10 до 20 ежедневно)
-          <div class="btn-link-container">
-            <div class="hover-effect">
-              <a href="#" class="btn form-btn feedback-button">Форма обратной связи</a>
-            </div>
-          </div>
+          <a href="#" class="btn form-btn feedback-button">Форма обратной связи</a>
         </p>
       </section>
     </section>
@@ -269,11 +229,7 @@
       <input type="text" name="feedback-form-name" placeholder="Как вас зовут?">
       <input type="email" name="feedback-form-email" placeholder="Ваша почта для ответа">
       <textarea name="feedback-form-message" cols="30" rows="10" placeholder="Ваша почта для ответа"></textarea>
-      <div class="btn-link-container">
-        <div class="hover-effect">
-          <button type="submit" class="btn feedback-btn">Отправить</button>
-        </div>
-      </div>
+      <button type="submit" class="btn feedback-btn">Отправить</button>
       <button type="button" class="modal close" aria-label="Закрыть окно обратной связи">X</button>
     </form>
   </section>

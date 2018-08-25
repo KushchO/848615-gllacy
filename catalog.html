@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/glassy.css">
 </head>
 
@@ -47,11 +47,7 @@
               <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
               <label for="auth-password-field" class="visually-hidden">Пароль</label>
               <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
-              <div class="btn-link-container">
-                <div class="hover-effect">
-                  <a class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</a>
-                </div>
-              </div>
+              <a class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</a>
             </form>
             <ul class="additional-links">
               <li><a href="#">Забыли пароль?</a></li>
@@ -96,11 +92,7 @@
             </table>
             <hr>
             <p class="cart-overall-price"><span>Итого:</span><span class="overall-price">750 руб.</span></p>
-              <div class="btn-link-container">
-                  <div class="hover-effect">
-                    <a href="#" class="btn" aria-label="Быстрый просмотр товара">Оформить заказ</a>
-                  </div>
-                </div>
+            <a href="#" class="btn" aria-label="Быстрый просмотр товара">Оформить заказ</a>
           </div>
         </li>
       </ul>
@@ -127,10 +119,10 @@
           <fieldset>
             <legend>Сортировка</legend>
             <select name="sort-filter" id="sort-filter-form">
-              <option name="sort-filter-opt" value="по популярности">по популярности</option>
-              <option name="sort-filter-opt" value="сначала недорогие">сначала недорогие</option>
-              <option name="sort-filter-opt" value="сначала дорогие">сначала дорогие</option>
-              <option name="sort-filter-opt" value="по жирности">по жирности</option>
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
             </select>
             <label for="sort-price-range">Цена: 100 руб. – 500 руб.</label>
             <input id="sort-price-range" type="range" min="100" max="500">
@@ -155,7 +147,6 @@
                 </li>
               </ul>
             </fieldset>
-
           </fieldset>
           <fieldset>
             <legend>Наполнители</legend>
@@ -183,7 +174,6 @@
           <button type="submit" class="sort-form-btn">Применить</button>
         </form>
       </section>
-
       <section class="cream product-grid">
         <h3 class="visually-hidden">Мороженое:</h3>
         <ul>
@@ -195,11 +185,7 @@
             <a href="#">
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -209,11 +195,7 @@
             <a href="#">
               Сливочно-кофейное с кусочками шоколада
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -223,11 +205,7 @@
             <a href="#">
               Сливочно-клубничное с присыпкой из белого шоколада
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -237,24 +215,17 @@
             <a href="#">
               Сливочное крем-брюле с карамельной подливкой
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
               <img class="product-img " src="img/cowberry.jpg" width="267" height="267" alt="Брусничное">
             </a>
+            <p class="price">325₽ <span class="weight">кг</span></p>
             <a href="#">
-              <p class="price">325">Сливочное с брусничным джемом</p>
+              Сливочное с брусничным джемом
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -264,11 +235,7 @@
             <a href="#">
               Сливочно-черничное с цельными ягодами черники
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -278,11 +245,7 @@
             <a href="#">
               Сливочно-лимонное с карамельной присыпкой
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -292,11 +255,7 @@
             <a href="#">
               Сливочное с шоколодной стружкой
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -306,11 +265,7 @@
             <a href="#">
               Сливочно-ванильное с кусочками шоколада
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -320,11 +275,7 @@
             <a href="#">
               Сливочное с ментоловым сиропом
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -334,11 +285,7 @@
             <a href="#">
               Сливочное с кусочками черного шоколада
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
           <li class="product">
             <a href="#">
@@ -348,11 +295,7 @@
             <a href="#">
               Сливочное с Мятным сиропом
             </a>
-            <div class="btn-link-container">
-              <div class="hover-effect">
-                <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
-              </div>
-            </div>
+            <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
           </li>
         </ul>
       </section>

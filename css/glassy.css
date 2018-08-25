@@ -22,6 +22,14 @@ a:active {
   color: #ffbc9e;
 }
 
+.header-navigation {
+  padding-left: 0;
+}
+
+.header-user-navigation {
+  padding-left: 0;
+}
+
 input,
 textarea {
   color: #323232;
@@ -68,6 +76,11 @@ textarea:focus {
 .modal a{
   color: #000000;
   background: transparent;
+}
+
+.modal .btn {
+  color: #ffffff;
+  background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
 
 .modal a:hover{
@@ -132,9 +145,11 @@ textarea:focus {
   list-style: none;
 }
 
-.form-authorization .btn-link-container{
+.form-authorization .btn{
   width:100px;
   height: 45px;
+  line-height: 45px;
+  border-radius: 20px;
 }
 
 
@@ -166,18 +181,18 @@ textarea:focus {
   line-height: 61px;
 }
 
-.btn-link-container {
+.btn {
   background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.btn-link-container:hover {
-  background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+.btn:hover {
+  background-image: linear-gradient( 0deg, rgb(236,111,94) 0%, rgb(245,134,105) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
 }
 
-.btn-link-container:active {
-  background-image: linear-gradient( 0deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+.btn:active {
+  background-image: linear-gradient( 0deg, rgb(225,97,62) 0%, rgb(215,70,50) 100%);
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 
@@ -189,25 +204,12 @@ textarea:focus {
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
-  background: transparent;
   border:none;
   margin:auto;
   font-size: 18px;
   line-height: 24px;
 }
 
-.hover-effect{
-  box-sizing: border-box;
-  padding-top: 10px;
-  width: 100%;
-  height :100%;
-}
-
-
-.hover-effect:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgb(255, 255, 255);
-}
 
 .btn:hover {
   color: rgb(255, 255, 255);
@@ -220,16 +222,14 @@ textarea:focus {
   color:#ffffff;
 }
 
-.featured-products .btn-link-container{
-  width: 280px;
-  height: 65px;
-}
-
 .featured-products .btn{
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
   font-size: 32px;
-  line-height: 44px;
+  line-height: 65px;
+  width: 280px;
+  height: 65px;
+  border-radius: 20px;
 }
 
 .main li {
@@ -254,14 +254,18 @@ textarea:focus {
   background-image: url(../img/free-chocolate.jpg);
   background-repeat: no-repeat;
 }
-.free-raspberry .btn-link-container {
+.free-raspberry .btn {
   width: 165px;
   height: 46px;
+  line-height: 46px;
+  border-radius: 20px;
 }
 
-.free-chocolate .btn-link-container {
+.free-chocolate .btn {
   width: 189px;
   height: 45px;
+  line-height: 45px;
+  border-radius: 20px;
 }
 
 .price {
@@ -329,9 +333,11 @@ textarea:focus {
   background-color: #f8f7f4;
 }
 
-.e-mail-subscribe .btn-link-container{
+.e-mail-subscribe .btn{
   width: 129px;
   height: 44px;
+  line-height: 44px;
+  border-radius: 20px;
 }
 
 .main-map .map-container {
@@ -354,9 +360,11 @@ textarea:focus {
   line-height: 24px;
 }
 
-.main-contacts  .btn-link-container{
+.main-contacts  .btn{
   width: 252px;
   height: 44px;
+  line-height: 44px;
+  border-radius: 20px;
 }
 
 .footer-navigation a {
@@ -374,15 +382,19 @@ textarea:focus {
   font-size: 24px;
   font-family: 28px;
 }
-.main-feedback  .btn-link-container {
+.main-feedback  .btn {
   width: 139px;
   height: 44px;
+  line-height: 44px;
+  border-radius: 20px;
 }
 
-.hit-products .btn-link-container,
-.product-grid .btn-link-container {
+.hit-products .btn,
+.product-grid .btn {
   width: 200px;
   height: 44px;
+  line-height: 44px;
+  border-radius: 20px;
 }
 
 .product{
@@ -390,11 +402,11 @@ textarea:focus {
   //height: 405px;
 }
 
-.product .btn-link-container {
+.product .btn {
   display: none;
 }
 
-.product:hover .btn-link-container{
+.product:hover .btn{
   display: block;
 }
 
@@ -441,9 +453,11 @@ textarea:focus {
   line-height: 18px;
 }
 
-.main-cart .btn-link-container {
+.main-cart .btn {
   width: 170px;
   height: 44px;
+  line-height: 44px;
+  border-radius: 20px;
 }
 
 .main-cart .btn{
@@ -506,13 +520,3 @@ textarea:focus {
 
 
 
-.Подложка {
-  background-color: rgb(237, 237, 237);
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-  position: absolute;
-  left: 863px;
-  top: 2371px;
-  width: 144px;
-  height: 36px;
-  z-index: 50;
-}
