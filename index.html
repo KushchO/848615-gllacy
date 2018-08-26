@@ -8,15 +8,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/glassy.css">
 </head>
-
 <body>
   <header class="main header">
     <h1 class="visually-hidden">Магазин мороженного Gllacy</h1>
     <img class="main logo" src="img/logo.svg" width="154" height="64" alt="Магазин мороеженого Gllacy">
     <nav>
-      <ul class=" main header-navigation">
+      <ul class="main header-navigation">
         <li class="catalog-link-1lv"><a href="/catalog.html">Каталог</a>
-          <ul class=" catalog-second-level">
+          <ul class="catalog-second-level">
             <li class="new "><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербет</a></li>
@@ -27,6 +26,8 @@
         <li class="catalog-link-1lv"><a href="#">Доставка и оплата</a></li>
         <li class="catalog-link-1lv"><a href="#">О компании</a></li>
       </ul>
+    </nav>
+    <nav>
       <ul class="main header-user-navigation">
         <li class="main-search">
           <a href="#">Поиск</a>
@@ -61,24 +62,24 @@
       <b>8 812 450 25 25</b>
     </p>
   </header>
-  <main>
-    <section class="main featured-products">
-      <h2 class="visually-hidden">Лучшие товары</h2>
-      <img class="first-featured" src="img/big-icecream.png" width="1045" height="881" alt="Мороженое:">
-      <p class="large-text">Крем брюле и пломбир с малиновым Джемом</p>
-      <a class="btn take-offer-link" href="#">Дайте оба!</a>
+  <section class="main featured-products">
+    <h2 class="visually-hidden">Лучшие товары</h2>
+    <img class="first-featured" src="img/big-icecream.png" width="1045" height="881" alt="Мороженое:">
+    <p class="large-text">Крем-брюле и пломбир с малиновым Джемом</p>
+    <a class="btn take-offer-link" href="#">Дайте оба!</a>
 
-      <ul class="slider-switcher">
-        <li>
-          <button type="button" aria-label="Первый слайд: Крем брюле и пломбир с малиновым Джемом"></button>
-        </li>
-        <li><button type="button" aria-label="Второй слайд"></button>
-        </li>
-        <li>
-          <button type="button" aria-label="Второй слайд"></button>
-        </li>
-      </ul>
-    </section>
+    <ul class="slider-switcher">
+      <li>
+        <button type="button" aria-label="Первый слайд: Крем брюле и пломбир с малиновым Джемом"></button>
+      </li>
+      <li><button type="button" aria-label="Второй слайд"></button>
+      </li>
+      <li>
+        <button type="button" aria-label="Второй слайд"></button>
+      </li>
+    </ul>
+  </section>
+  <main class="main-content" >
     <section class="main gift-offers">
       <h2 class="visually-hidden">Подарки от Gllacy</h2>
       <div class="free-raspberry">
@@ -94,7 +95,7 @@
     </section>
     <section class="main hit-products">
       <h2 class="visually-hidden">Хиты продаж</h2>
-      <ul class="grid">
+      <ul class="product-grid">
         <li class="product orange">
           <a href="#">
             <span class="hit">hit</span>
@@ -167,41 +168,43 @@
       </ul>
     </section>
     <!-- Я использую здесь section потому что article все же лучше использовать для самой статьи, а не её превью. -->
-    <section class="featured-blog-article">
-      <h2>Новое в нашем блоге</h2>
-      <a class="full-article-link">
-        10 способов сервировки фруктовых щербетов к столу
-      </a>
-    </section>
-    <section class="e-mail-subscribe">
-      <div class="e-mail-subscribe-wrapper">
-        <h2 class="visually-hidden">Подпишитесь на нашу e-mail рассылку</h2>
-        <p class="subscribe-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что
-          у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form class="e-mail-subscribe-form" action="https://echo.htmlacademy.ru">
-          <input type="email" name="e-mail-subscribe-field" placeholder="Электронная почта" aria-label="Ваш имейл для новоостей">
-          <button type="submit" class="btn form-btn" aria-label="Подтвердить подписку">Отправить</button>
-        </form>
-      </div>
-    </section>
-    <section class="main-map">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="map-container"></div>
-      <!-- Наверное указатель на карте делается через сервис яндекс карты, но на всякий случай добавил элемент для нее явно. Можно сделать через ::before или ::after Но думаю все это плохо будет работать в резиновом варианте -->
-      <span class="ice-pointer"></span>
-      <section class="main-contacts">
-        <h3 class="visually-hidden">Контакты</h3>
-        <p class="contact-information">
-          Адрес главного офиса и&nbsp;офлайн-магазина:
-          <b>ул. Большая Конюшенная 19/8,</b>
-          Санкт-Петербург Для заказов по телефону:
-          <b>8 812 450-25-25</b>
-          (с 10 до 20 ежедневно)
-          <a href="#" class="btn form-btn feedback-button">Форма обратной связи</a>
-        </p>
+    <div class="wrapper-1">
+      <section class="featured-blog-article">
+        <h2>Новое в нашем блоге</h2>
+        <a class="full-article-link">
+          10 способов сервировки фруктовых щербетов к столу
+        </a>
       </section>
-    </section>
+      <section class="e-mail-subscribe">
+        <div class="e-mail-subscribe-wrapper">
+          <h2 class="visually-hidden">Подпишитесь на нашу e-mail рассылку</h2>
+          <p class="subscribe-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что
+            у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form class="e-mail-subscribe-form" action="https://echo.htmlacademy.ru">
+            <input type="email" name="e-mail-subscribe-field" placeholder="Электронная почта" aria-label="Ваш имейл для новоостей">
+            <button type="submit" class="btn form-btn" aria-label="Подтвердить подписку">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
+  <section class="main-map">
+    <h2 class="visually-hidden">Контактная информация</h2>
+    <div class="map-container"></div>
+    <!-- Наверное указатель на карте делается через сервис яндекс карты, но на всякий случай добавил элемент для нее явно. Можно сделать через ::before или ::after Но думаю все это плохо будет работать в резиновом варианте -->
+    <span class="ice-pointer"></span>
+    <section class="main-contacts">
+      <h3 class="visually-hidden">Контакты</h3>
+      <p class="contact-information">
+        Адрес главного офиса и&nbsp;офлайн-магазина:
+        <b>ул. Большая Конюшенная 19/8,</b>
+        Санкт-Петербург Для заказов по телефону:
+        <b>8 812 450-25-25</b>
+        (с 10 до 20 ежедневно)
+        <a href="#" class="btn form-btn feedback-button">Форма обратной связи</a>
+      </p>
+    </section>
+  </section>
   <footer class="main footer">
     <ul class="social-links">
       <li class="twitter"><a href="#">Twitter</a></li>

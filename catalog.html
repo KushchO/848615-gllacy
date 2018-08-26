@@ -17,7 +17,7 @@
     </a>
     <nav>
       <ul class=" main header-navigation">
-        <li class="catalog-link-1lv"><a href="catalog.html">Каталог</a>
+        <li class="catalog-link-1lv current-page"><a href="catalog.html">Каталог</a>
           <ul class=" catalog-second-level">
             <li class="new"><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
@@ -29,6 +29,8 @@
         <li class="catalog-link-1lv"><a href="#">Доставка и оплата</a></li>
         <li class="catalog-link-1lv"><a href="#">О компании</a></li>
       </ul>
+    </nav>
+    <nav>
       <ul class="main header-user-navigation">
         <li class="main-search">
           <a href="#">Поиск</a>
@@ -56,7 +58,7 @@
           </div>
         </li>
         <li class="main-cart"><a href="#">Корзина</a>
-          <div class="form-wrap">
+          <div class="modal form-wrap">
             <table class="cart-product-table">
               <tr>
                 <td>
@@ -104,51 +106,53 @@
   </header>
   <nav class="catalog breadcrumbs">
     <h3 class="visually-hidden">Адрес сайта:</h3>
-    <ul>
+    <ul class="breadcrumbs-links">
       <li class="first-child"><a href="index.html">Главная</a></li>
       <li class="second-child"><a href="#">Каталог</a></li>
-      <li class="third-child"><a href="#">Сливочное</a></li>
+      <li class="third-child current"><a href="#">Сливочное</a></li>
     </ul>
   </nav>
-  <main id="catalog" class="cream">
-    <section class="proct-grid">
+  <main id="catalog" class="cream-content">
+    <section class="products">
       <h2 class="catalog-page heading">Сливочное мороженное</h2>
       <section class="sort-filter">
         <h3 class="visually-hidden">Фильтры товаров</h3>
         <form class="sort-filter-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
-            <legend>Сортировка</legend>
+          <div class="filter-element-wrapper1">
+            <label for="sort-filter-form">Сортировка</label>
             <select name="sort-filter" id="sort-filter-form">
               <option>по популярности</option>
               <option>сначала недорогие</option>
               <option>сначала дорогие</option>
               <option>по жирности</option>
             </select>
-            <label for="sort-price-range">Цена: 100 руб. – 500 руб.</label>
-            <input id="sort-price-range" type="range" min="100" max="500">
-            <fieldset>
-              <legend>По жирности</legend>
-              <ul>
-                <li>
-                  <label for="sort-fat-0%">0%</label>
-                  <input id="sort-fat-0%" name="sort-fat" type="radio" value="0%">
-                </li>
-                <li>
-                  <label for="sort-fat-lower10%">до 10%</label>
-                  <input id="sort-fat-lower10%" name="sort-fat" type="radio" value="до 10%">
-                </li>
-                <li>
-                  <label for="sort-fat-lower30%">до 30%</label>
-                  <input id="sort-fat-lower30%" name="sort-fat" type="radio" value="до 30%">
-                </li>
-                <li>
-                  <label for="sort-fat-more30%">выше 30%</label>
-                  <input id="sort-fat-more30%" name="sort-fat" type="radio" value="выше 30%">
-                </li>
-              </ul>
-            </fieldset>
+          </div>
+          <div class="filter-element-wrapper2">
+              <label for="sort-price-range">Цена: 100 руб. – 500 руб.</label>
+              <input id="sort-price-range" type="range" min="100" max="500">
+          </div>
+          <fieldset class="fat-filter">
+            <legend>По жирности</legend>
+            <ul>
+              <li>
+                <label for="sort-fat-0%">0%</label>
+                <input id="sort-fat-0%" name="sort-fat" type="radio" value="0%">
+              </li>
+              <li>
+                <label for="sort-fat-lower10%">до 10%</label>
+                <input id="sort-fat-lower10%" name="sort-fat" type="radio" value="до 10%">
+              </li>
+              <li>
+                <label for="sort-fat-lower30%">до 30%</label>
+                <input id="sort-fat-lower30%" name="sort-fat" type="radio" value="до 30%">
+              </li>
+              <li>
+                <label for="sort-fat-more30%">выше 30%</label>
+                <input id="sort-fat-more30%" name="sort-fat" type="radio" value="выше 30%">
+              </li>
+            </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="addings">
             <legend>Наполнители</legend>
             <ul>
               <li>
@@ -176,7 +180,7 @@
       </section>
       <section class="cream product-grid">
         <h3 class="visually-hidden">Мороженое:</h3>
-        <ul>
+        <ul class="product-grid">
           <li class="product">
             <a href="#">
               <img class="product-img " src="img/orange-ice.jpg" width="267" height="267" alt="Апельсиновое">
@@ -302,7 +306,7 @@
     </section>
     <nav class="pagination">
       <h3 class="visually-hidden">Постраничная навигация</h3>
-      <ul>
+      <ul class="pagination-list">
         <li class="pagination-child current-page"><a>1</a></li>
         <li class="pagination-child"><a href="#">2</a></li>
         <li class="pagination-child"><a href="#">3</a></li>
