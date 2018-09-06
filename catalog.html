@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
@@ -9,7 +8,8 @@
   <link rel="stylesheet" href="css/glassy.css">
 </head>
 <body>
-    <header class="main header">
+  <div class="container container-catalog">
+    <header class="main header ">
         <h1 class="visually-hidden">Магазин мороженного Gllacy</h1>
         <img class="main logo" src="img/logo.svg" width="154" height="64" alt="Магазин мороеженого Gllacy">
         <nav class="menu-container">
@@ -37,44 +37,48 @@
                     <span class="visually-hidden">
                       Поиск
                     </span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                    <svg class="search-sv" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
                       <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                     </svg>
                   </a>
+                  <div class="modal-wrap">
                   <div class="modal form-wrap search-form-wrapper">
                     <form class="search-form" action="https://echo.htmlacademy.ru">
                       <input type="search" name="search-form" placeholder="Что ищем?" />
 
                     </form>
                   </div>
+                  </div>
                 </li>
-            <li class="main-search">
-              <a class="authorization-form-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-                  <g fill="#000">
-                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
-                    <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                  </g>
-                </svg>
-                <div class="link-wrapper">
-                  Вход
+                <li class="main-authorization">
+                  <a class="authorization-form-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                      <g fill="#000">
+                        <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                        <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                      </g>
+                    </svg>
+                    <div class="link-wrapper">
+                      Вход
+                    </div>
+                  </a>
+                  <div class="modal-wrap">
+                  <div class="modal form-wrap form-authorization-wrapper">
+                    <h2 class="visually-hidden">Форма авторизации на сайте Gllacy</h2>
+                    <form class="authorization-form">
+                      <label for="auth-e-mail-field" class="visually-hidden">Электронная почта</label>
+                      <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
+                      <label for="auth-password-field" class="visually-hidden">Пароль</label>
+                      <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
+                      <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
+                    </form>
+                    <ul class="additional-links">
+                      <li><a href="#">Забыли пароль?</a></li>
+                      <li><a href="#">Новая регистрация</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </a>
-              <div class="modal form-wrap form-authorization-wrapper">
-                  <h2 class="visually-hidden">Форма авторизации на сайте Gllacy</h2>
-                  <form class="authorization-form">
-                    <label for="auth-e-mail-field" class="visually-hidden">Электронная почта</label>
-                    <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
-                    <label for="auth-password-field" class="visually-hidden">Пароль</label>
-                    <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
-                    <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
-                  </form>
-                  <ul class="additional-links">
-                    <li><a href="#">Забыли пароль?</a></li>
-                    <li><a href="#">Новая регистрация</a></li>
-                  </ul>
-                </div>
-            </li>
+                </li>
             <li class="main-cart">
               <a class="cart-link cart-with-goods" href="#">
                 <span class="visually-hidden">Корзина</span>
@@ -86,6 +90,7 @@
                   </g>
                 </svg>
               </a>
+              <div class="modal-wrap">
               <div class="modal form-wrap cart-popup">
                   <div class="cart-wrapper">
                   <div class="cart-product-table">
@@ -99,9 +104,9 @@
                         <p class="cart-product-info">Пломбир с апельсиновым джемом</p>
                       </div>
                       <div class="cart-popup-calculation">
-                        <p class="cart-product-weight-price">1,5 кг х <span class="lighter">&nbsp200</span>&nbspруб.</p>
+                        <p class="cart-product-weight-price">1,5 кг х <span class="lighter">&nbsp;200</span>&nbsp;руб.</p>
                       </div>
-                      <div class="cart-popup-total"><span class="cart-product-total-price">300 руб.</span></div>
+                      <div class="cart-popup-total"><span class="cart-product-total-price">&nbsp;300руб.</span></div>
                       <div class="cart-delete-btn">
                         <button class="delete-btn" type="button" aria-label="удалить строку">Х</button>
                       </div>
@@ -113,15 +118,16 @@
                         <p class="cart-product-info">Клубничный пломбир с присыпкой из белого шоколада</p>
                       </div>
                       <div class="cart-popup-calculation">
-                        <p class="cart-product-weight-price">1,5 кг х <span class="lighter">&nbsp300</span>&nbspруб.</p>
-                      </div class="cart-popup-total">
-                      <div class="cart-popup-total"><span class="cart-product-total-price">450 руб.</span></div>
+                        <p class="cart-product-weight-price">1,5 кг х <span class="lighter"> &nbsp; 300</span> &nbsp; руб.</p>
+                      </div>
+                      <div class="cart-popup-total"><span class="cart-product-total-price"> &nbsp;450 руб.</span></div>
                     </div>
                   <div class="stroke"></div>
-                  <p class="cart-overall-price"><span>Итого:</span><span class="overall-price">&nbsp750 руб.</span></p>
+                  <p class="cart-overall-price"><span>Итого:</span><span class="overall-price"> &nbsp; 750 руб.</span></p>
                   <a href="#" class="btn cart-submit-btn" aria-label="Быстрый просмотр товара">Оформить заказ</a>
                   </div>
                 </div>
+               </div>
             </li>
           </ul>
         </nav>
@@ -129,18 +135,19 @@
           С 10 до 20, ежедневно<br>
           <b>8 812 450-25-25</b>
         </p>
+        <nav class="catalog-breadcrumbs">
+            <h3 class="visually-hidden">Адрес сайта:</h3>
+            <ul class="breadcrumbs-links">
+              <li class="first-child breadcrumbs-links-li"><a href="index.html">Главная</a></li>
+              <li class="second-child breadcrumbs-links-li"><a href="#">Каталог</a></li>
+              <li class="third-child breadcrumbs-links-li breadcrumbs-links-current"><a href="#">Сливочное</a></li>
+            </ul>
+          </nav>
       </header>
-  <nav class="catalog-breadcrumbs">
-    <h3 class="visually-hidden">Адрес сайта:</h3>
-    <ul class="breadcrumbs-links">
-      <li class="first-child breadcrumbs-links-li"><a href="index.html">Главная</a></li>
-      <li class="second-child breadcrumbs-links-li"><a href="#">Каталог</a></li>
-      <li class="third-child breadcrumbs-links-li breadcrumbs-links-current"><a href="#">Сливочное</a></li>
-    </ul>
-  </nav>
+
   <main id="catalog" class="cream-content">
     <section class="products">
-      <h2 class="catalog-page-heading">Сливочное мороженное</h2>
+      <h2 class="catalog-page-heading">Сливочное мороженое</h2>
       <section class="sort-filter">
         <h3 class="visually-hidden">Фильтры товаров</h3>
         <form class="sort-filter-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -155,7 +162,6 @@
             <svg class="select-icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path class="select-icon-fill" fill="#231F20" d="M5.5 10L0 0h11"/>
             </svg>
-          </label>
           </div>
           <div class="filter-element-wrapper2">
               <label for="sort-price-range">Цена: 100 руб. – 500 руб.</label>
@@ -171,28 +177,24 @@
             <legend>Жирность:</legend>
             <ul class="sort-filter-fat">
               <li>
-                <label class="sort-filter-fat-label" for="sort-fat-0">0%
+                <label class="sort-filter-fat-label" for="sort-fat-0">0%</label>
                 <input id="sort-fat-0" name="sort-fat" type="radio" value="0%">
                 <div class="sort-filter-fat-radio"></div>
-              </label>
               </li>
               <li>
-                 <label class="sort-filter-fat-label" for="sort-fat-lower10">до 10%
+                 <label class="sort-filter-fat-label" for="sort-fat-lower10">до 10%</label>
                 <input id="sort-fat-lower10" name="sort-fat" type="radio" value="до 10%" checked>
                 <div class="sort-filter-fat-radio"></div>
-              </label>
               </li>
               <li>
-                <label class="sort-filter-fat-label" for="sort-fat-lower30">до 30%
+                <label class="sort-filter-fat-label" for="sort-fat-lower30">до 30%</label>
                 <input id="sort-fat-lower30" name="sort-fat" type="radio" value="до 30%">
                 <div class="sort-filter-fat-radio"></div>
-              </label>
               </li>
               <li>
-                <label class="sort-filter-fat-label" for="sort-fat-more30">выше 30%
+                <label class="sort-filter-fat-label" for="sort-fat-more30">выше 30%</label>
                 <input id="sort-fat-more30" name="sort-fat" type="radio" value="выше 30%">
                 <div class="sort-filter-fat-radio"></div>
-              </label>
               </li>
             </ul>
           </fieldset>
@@ -200,33 +202,28 @@
             <legend>Наполнители</legend>
             <ul class="sort-filter-addings">
               <li>
-                <label for="addings-choco">шоколадные
+                <label for="addings-choco">шоколадные</label>
                 <input id="addings-choco" type="checkbox" name="sort-form-addings" value="choco" checked>
                 <div class="sort-filter-addings-check"></div>
-              </label>
               </li>
               <li>
-                <label for="addings-shugar">сахарные присыпки
+                <label for="addings-shugar">сахарные присыпки </label>
                 <input id="addings-shugar" type="checkbox" name="sort-form-addings" value="sugar" checked>
                 <div class="sort-filter-addings-check"></div>
-              </label>
               </li>
               <li>
-                <label for="addings-fruits">фрукты
+                <label for="addings-fruits">фрукты</label>
                 <input id="addings-fruits" type="checkbox" name="sort-form-addings"  value="fruits">
                 <div class="sort-filter-addings-check"></div>
-              </label>
               </li>
               <li>
-                <label for="addings-syrup">сиропы
+                <label for="addings-syrup">сиропы</label>
                 <input id="addings-syrup" type="checkbox" name="sort-form-addings" value="syrup">
                 <div class="sort-filter-addings-check"></div>
-              </label>
               </li>
-              <li><label for="addings-jam">джемы
+              <li><label for="addings-jam">джемы</label>
                 <input id="addings-jam" type="checkbox" name="sort-form-addings" value="jam">
                 <div class="sort-filter-addings-check"></div>
-              </label>
               </li>
             </ul>
           </fieldset>
@@ -454,11 +451,13 @@
         </ul>
       </nav>
       <div class="branding">
-        <img class="footer-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="htmlacademy">
-        <p class="branding-text">Сделано в <a href="#" class="small-link">HTML Academy</a> © 2017</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-link"><img class="footer-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="htmlacademy"></a>
+        <p class="branding-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="small-link">HTML Academy</a> © 2017</p>
       </div>
     </footer>
+  </div>
     <script src="js/gllacy.js"></script>
+
 </body>
 
 </html>
