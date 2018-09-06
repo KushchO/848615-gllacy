@@ -749,12 +749,14 @@ textarea:focus {
 
 .main-contacts {
   position: absolute;
+  display: block;
   top: 60px;
   right: 27px;
   width: 300px;
   height: 305px;
   border-radius: 20px;
   padding: 20px;
+  z-index: 3;
 }
 
 
@@ -1443,11 +1445,6 @@ textarea:focus {
   margin-top: -2px;
 }
 
-.modal-show {
-  position: absolute;
-  display: block;
-}
-
 .main-search,
 .main-authorization {
   position: relative;
@@ -1469,7 +1466,6 @@ textarea:focus {
 
 .search-form input:hover {
   padding: 8px 14px;
-
 }
 
 .form-authorization-wrapper {
@@ -1525,13 +1521,7 @@ textarea:focus {
 
 
 
-.main-feedback {
-    top: 330px;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 18px 24px 27px;
-    border-radius: 10px;
-}
+
 
 .feedback-form input {
   padding: 9px 15px;
@@ -1543,8 +1533,16 @@ textarea:focus {
   padding: 8px 14px;
 }
 
+.feedback-form input:focus {
+  padding: 8px 14px;
+}
+
 .feedback-form input:not(.feedback-text) {
   width: 235px;
+}
+
+.feedback-form textarea:focus{
+  padding: 8px 14px;
 }
 
 .feedback-text {
@@ -2235,4 +2233,77 @@ input:checked ~ .sort-filter-addings-check{
 #product-2:checked ~ .page-wrapper label[for="product-2"],
 #product-3:checked ~ .page-wrapper label[for="product-3"] {
   background-color: #ffffff;
+}
+
+/*Form-js*/
+
+@keyframes bounce {
+  0% {
+    transform: translateX(620px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  position: absolute;
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.main-feedback {
+  top: 1945px;
+  right: 620px;
+  padding: 18px 24px 27px;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.map-container {
+  position: relative;
+  z-index: 1;
+
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
