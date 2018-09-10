@@ -344,7 +344,7 @@ textarea:focus {
 }
 
 .gllacy-features {
-  padding: 0 27px;
+  padding: 0 2.25%;
   margin-bottom: 40px;
 }
 
@@ -461,8 +461,19 @@ textarea:focus {
 }
 
 .product{
-  max-width: 293px;
+  width: 23.29%;
   position: relative;
+  margin-right: 1px;
+}
+
+
+.product-img-link{
+  max-width: 267px;
+}
+
+.product-img-link,
+.product .price {
+  display: block;
 }
 
 .product .btn {
@@ -633,7 +644,6 @@ textarea:focus {
 }
 
 .header-user-navigation{
-  width: 300px;
  justify-content: flex-end;
  margin-bottom: 60px;
 
@@ -689,7 +699,7 @@ textarea:focus {
 
 .gift-offers {
   margin-bottom: 40px;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .free-raspberry,
@@ -697,10 +707,6 @@ textarea:focus {
   box-sizing: border-box;
   flex-grow: 1;
   border-radius: 15px;
-}
-
-.product {
-  width: 267px;
 }
 
 .product-grid {
@@ -726,17 +732,23 @@ textarea:focus {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .feature-list li{
-  width: 483px;
+  box-sizing: border-box;
+  width: 48.5%;
   padding-left: 57px;
+  font-weight: 400;
+}
+
+.feature-list li:nth-last-child(odd){
+  margin-left: 2.6%;
 }
 
 .wrapper-1 {
   margin-bottom: 40px;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .e-mail-subscribe{
@@ -1074,18 +1086,18 @@ textarea:focus {
 }
 
 .free-raspberry {
-  margin-right: 10px;
+  margin-right: 2.16%;
 }
 
 .free-chocolate {
-  margin-left: 10px;
+
 }
 
 .free-raspberry,
 .free-chocolate  {
   position: relative;
   padding: 16px 18px 114px;
-  max-width: 560px;
+  width: 46.66%;
 }
 
 .gift-offers .take-offer {
@@ -1106,13 +1118,11 @@ textarea:focus {
   position: static;
 }
 
-.product-grid .product {
-  margin-left: 1px;
-}
-
 .product-grid .product-img {
   border-radius: 50%;
   z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 .product-grid .hit {
@@ -1151,10 +1161,11 @@ textarea:focus {
 .title-wrapper a {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 500;
 }
 
 .title-wrapper {
-  width: 260px;
+  //width: 260px;
   margin: 0 auto;
   text-align: center;
   margin-top: 10px;
@@ -1169,6 +1180,7 @@ textarea:focus {
   left: 50%;
   margin-left: -100px;
   z-index: 25;
+
 }
 
 .product:hover .hover-wrap {
@@ -1217,7 +1229,7 @@ textarea:focus {
   background-image: url(../img/waffle.jpg);
   background-repeat: repeat-x;
   border-radius: 15px;
-  padding: 25px 20px 15px;
+  padding: 25px 1.74% 15px;
   color: #323232;
 }
 
@@ -1255,7 +1267,7 @@ textarea:focus {
 .wrapper-1 .featured-blog-article,
 .wrapper-1 .e-mail-subscribe {
   position: relative;
-  max-width: 560px;
+  width: 46.66px;
   box-sizing: border-box;
   flex-grow: 1;
   border-radius: 15px;
@@ -1263,17 +1275,21 @@ textarea:focus {
 
 .e-mail-subscribe {
   padding: 5px;
+  margin-left: 2.16%;
+  max-height: 221px;
 }
 
 .featured-blog-article {
-  padding: 22px 20px 82px;
+  padding: 24px 20px 80px;
   background-position: -25px -135px;
 }
 
 .e-mail-subscribe-wrapper {
-  padding: 28px 20px;
+  padding: 30px 20px 75px;
   border-radius: 15px;
   font-weight: 400;
+  position: relative;
+  min-height: 105px;
 }
 
 .featured-blog-article h2 {
@@ -1287,15 +1303,30 @@ textarea:focus {
   text-decoration: underline;
 }
 
+.e-mail-subscribe-input {
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 141px);
+}
+
+.e-mail-subscribe-input,
+.subscribe-btn
+ {
+  //margin-top: 37px;
+}
+
 .subscribe-info {
-  margin-bottom: 37px;
+  //margin-bottom: 37px;
 }
 
 .e-mail-subscribe-form {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 7px;
+  width: calc(100% - 40px);
+  bottom: 30px;
 }
 
 .e-mail-subscribe-form input[type=email]{
@@ -1350,7 +1381,7 @@ textarea:focus {
 
 .footer {
   align-content: center;
-  padding: 18px 27px;
+  padding: 18px 2.25%;
 }
 
 
@@ -2070,6 +2101,7 @@ input:checked ~ .sort-filter-addings-check{
 
 .footer .logo-link{
   border-bottom: none;
+  margin-left:2px;
 }
 
 
@@ -2109,7 +2141,7 @@ input:checked ~ .sort-filter-addings-check{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  min-width: 940px;
+  min-width: 900px;
 }
 
 .container-catalog {
@@ -2239,9 +2271,8 @@ input:checked ~ .sort-filter-addings-check{
 
 @keyframes bounce {
   0% {
-    transform: translateX(620px);
+    transform: translateX(-60vw);
   }
-
   70% {
     transform: translateX(30px);
   }
@@ -2280,12 +2311,16 @@ input:checked ~ .sort-filter-addings-check{
 .modal-show {
   position: absolute;
   display: block;
-  animation: bounce 0.6s;
+  animation: bounce 1s;
 }
 
 .main-feedback {
+  box-sizing: content-box;
+  width: 477px;
   top: 1945px;
-  right: 620px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   padding: 18px 24px 27px;
   border-radius: 10px;
   z-index: 5;
