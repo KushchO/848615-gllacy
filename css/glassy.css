@@ -529,7 +529,7 @@ textarea:focus {
 }
 
  .current-page a,
- .pagination a:active,  {
+ .pagination a:active {
   background-color: #ffffff;
   color: #323232;
   text-decoration: none;
@@ -2538,5 +2538,7 @@ input:checked ~ .sort-filter-addings-check{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;}
+  z-index: 2;
+  border: 0;
+}
 
