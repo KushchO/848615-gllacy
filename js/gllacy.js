@@ -2,6 +2,7 @@
 var feedbackLink = document.querySelector(".contacts-feedback-button");
 var feedbackPopup = document.querySelector(".main-feedback");
 var feedbackClose = document.querySelector(".feedback-close");
+var feedbackOverlay = document.querySelector(".overlay-wrap");
 
 var feedbackForm = feedbackPopup.querySelector(".feedback-form");
 var nameField = feedbackPopup.querySelector("[name=feedback-form-name]");
@@ -24,6 +25,7 @@ if(feedbackLink!== null){
 feedbackLink.addEventListener("click", function(ev){
   ev.preventDefault();
   feedbackPopup.classList.add("modal-show");
+  feedbackOverlay.classList.add("modal-show-overlay");
   if (storageEmail && storageName) {
     nameField.value = storageName;
     emailField.value = storageEmail;
@@ -44,6 +46,7 @@ if(feedbackClose!== null){
 feedbackClose.addEventListener("click", function(ev){
   ev.preventDefault();
   feedbackPopup.classList.remove("modal-show");
+  feedbackOverlay.classList.remove("modal-show-overlay");
   feedbackPopup.classList.remove("modal-error");
 });
 }
@@ -70,6 +73,10 @@ window.addEventListener("keydown", function(ev){
     if(feedbackPopup.classList.contains("modal-show")){
       feedbackPopup.classList.remove("modal-show");
       feedbackPopup.classList.remove("modal-error");
+    }
+    if(feedbackOverlay.classList.contains("modal-show-overlay")){
+      feedbackOverlay.classList.remove("modal-show-overlay");
+
     }
   }
 });
