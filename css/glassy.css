@@ -2141,7 +2141,7 @@ input:checked ~ .sort-filter-addings-check{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  min-width: 900px;
+  min-width: 940px;
 }
 
 .container-catalog {
