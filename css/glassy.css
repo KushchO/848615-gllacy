@@ -2366,30 +2366,30 @@ input:checked ~ .sort-filter-addings-check{
   cursor: pointer;
 }
 
-.slide-product-1:checked ~ .page-wrapper {
+#product-1:checked ~ .page-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-item1.png");
 }
 
-.slide-product-2:checked ~ .page-wrapper {
+#product-2:checked ~ .page-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slider-item2.png");
 }
 
-.slide-product-3:checked ~ .page-wrapper {
+#product-3:checked ~ .page-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-item3.png");
 }
 
-.slide-product-1:checked ~ .page-wrapper #slide1,
-.slide-product-2:checked ~ .page-wrapper #slide2,
-.slide-product-3:checked ~ .page-wrapper #slide3 {
+#product-1:checked ~ .page-wrapper #slide1,
+#product-2:checked ~ .page-wrapper #slide2,
+#product-3:checked ~ .page-wrapper #slide3 {
   display: block;
 }
 
-.slide-product-1:checked ~ .page-wrapper label[for="product-1"],
-.slide-product-2:checked ~ .page-wrapper label[for="product-2"],
-.slide-product-3:checked ~ .page-wrapper label[for="product-3"] {
+#product-1:checked ~ .page-wrapper label[for="product-1"],
+#product-2:checked ~ .page-wrapper label[for="product-2"],
+#product-3:checked ~ .page-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
