@@ -20,63 +20,58 @@ try {
   isStorageSupport = false;
 }
 
-
-if(feedbackLink!== null){
-feedbackLink.addEventListener("click", function(ev){
-  ev.preventDefault();
-  feedbackPopup.classList.add("modal-show");
-  feedbackOverlay.classList.add("modal-show-overlay");
-  if (storageEmail && storageName) {
-    nameField.value = storageName;
-    emailField.value = storageEmail;
-    textField.focus();
-  }else {
+if (feedbackLink !== null) {
+  feedbackLink.addEventListener("click", function (ev) {
+    ev.preventDefault();
+    feedbackPopup.classList.add("modal-show");
+    feedbackOverlay.classList.add("modal-show-overlay");
+    if (storageEmail && storageName) {
+      nameField.value = storageName;
+      emailField.value = storageEmail;
+      textField.focus();
+    } else {
       if (storageName) {
         nameField.value = storageName;
         emailField.focus();
       } else {
         nameField.focus();
-        }
+      }
     }
-
-});
+  });
 }
 
-if(feedbackClose!== null){
-feedbackClose.addEventListener("click", function(ev){
-  ev.preventDefault();
-  feedbackPopup.classList.remove("modal-show");
-  feedbackOverlay.classList.remove("modal-show-overlay");
-  feedbackPopup.classList.remove("modal-error");
-});
+if (feedbackClose !== null) {
+  feedbackClose.addEventListener("click", function (ev) {
+    ev.preventDefault();
+    feedbackPopup.classList.remove("modal-show");
+    feedbackOverlay.classList.remove("modal-show-overlay");
+    feedbackPopup.classList.remove("modal-error");
+  });
 }
 
-
-
-feedbackForm.addEventListener("submit", function(ev){
-  if(!nameField.value || !textField.value || !emailField.value) {
+feedbackForm.addEventListener("submit", function (ev) {
+  if (!nameField.value || !textField.value || !emailField.value) {
     ev.preventDefault();
     feedbackPopup.classList.remove("modal-error");
     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
     feedbackPopup.classList.add("modal-error");
   } else {
-      if (isStorageSupport) {
-  localStorage.setItem("name", nameField.value);
-  localStorage.setItem("email", emailField.value);
-      }
+    if (isStorageSupport) {
+      localStorage.setItem("name", nameField.value);
+      localStorage.setItem("email", emailField.value);
     }
+  }
 });
 
-window.addEventListener("keydown", function(ev){
-  if(ev.keyCode == 27) {
+window.addEventListener("keydown", function (ev) {
+  if (ev.keyCode == 27) {
     ev.preventDefault();
-    if(feedbackPopup.classList.contains("modal-show")){
+    if (feedbackPopup.classList.contains("modal-show")) {
       feedbackPopup.classList.remove("modal-show");
       feedbackPopup.classList.remove("modal-error");
     }
-    if(feedbackOverlay.classList.contains("modal-show-overlay")){
+    if (feedbackOverlay.classList.contains("modal-show-overlay")) {
       feedbackOverlay.classList.remove("modal-show-overlay");
-
     }
   }
 });
