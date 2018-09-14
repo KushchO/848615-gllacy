@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize-min.css">
   <link rel="stylesheet" href="css/glassy-min.css">
 </head>
 <body>
   <div class="container container-catalog">
     <header class="main header ">
       <h1 class="visually-hidden">Магазин мороженного Gllacy</h1>
-      <img class="main logo" src="img/logo.svg" width="154" height="64" alt="Магазин мороеженого Gllacy">
+      <a class="logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Магазин мороеженого Gllacy"></a>
       <nav class="menu-container">
         <ul class="main header-navigation">
           <li class="catalog-link-1lv current-page"><a href="#">Каталог</a>
@@ -30,8 +29,7 @@
           <li class="catalog-link-1lv"><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <nav>
-        <ul class="main header-user-navigation">
+      <nav>        <ul class="main header-user-navigation">
           <li class="main-search">
             <a class="search-form-link" href="#">
               <span class="visually-hidden">
@@ -45,8 +43,7 @@
             <div class="modal-wrap">
               <div class="modal form-wrap search-form-wrapper">
                 <form class="search-form" action="https://echo.htmlacademy.ru">
-                  <input type="search" name="search-form" placeholder="Что ищем?" />
-
+                  <input type="search" name="search-form" placeholder="Что ищем?"/>
                 </form>
               </div>
             </div>
@@ -67,13 +64,13 @@
             <div class="modal-wrap">
               <div class="modal form-wrap form-authorization-wrapper">
                 <h2 class="visually-hidden">Форма авторизации на сайте Gllacy</h2>
-                <form class="authorization-form">
+                <form class="authorization-form" id="main-authorization-form">
                   <label for="auth-e-mail-field" class="visually-hidden">Электронная почта</label>
                   <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
                   <label for="auth-password-field" class="visually-hidden">Пароль</label>
                   <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
-                  <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
                 </form>
+                <button form="main-authorization-form" type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
                 <ul class="additional-links">
                   <li><a href="#">Забыли пароль?</a></li>
                   <li><a href="#">Новая регистрация</a></li>
@@ -94,8 +91,8 @@
             </a>
             <div class="modal-wrap">
               <div class="modal form-wrap cart-popup">
-                <div class="cart-wrapper">
-                  <div class="cart-product-table">
+                <div class="cart-product-table">
+                  <div class="cart-product">
                     <div class="cart-delete-btn">
                       <button class="delete-btn" type="button" aria-label="удалить строку">Х</button>
                     </div>
@@ -107,9 +104,11 @@
                       <p class="cart-product-info">Пломбир с апельсиновым джемом</p>
                     </div>
                     <div class="cart-popup-calculation">
-                      <p class="cart-product-weight-price">1,5 кг х <span class="lighter">&nbsp;200</span>&nbsp;руб.</p>
+                      <p class="cart-product-weight-price">1,5 кг х <span class="lighter">200&nbsp;руб.</span></p>
                     </div>
                     <div class="cart-popup-total"><span class="cart-product-total-price">&nbsp;300руб.</span></div>
+                  </div>
+                  <div class="cart-product">
                     <div class="cart-delete-btn">
                       <button class="delete-btn" type="button" aria-label="удалить строку">Х</button>
                     </div>
@@ -121,13 +120,12 @@
                       <p class="cart-product-info">Клубничный пломбир с присыпкой из белого шоколада</p>
                     </div>
                     <div class="cart-popup-calculation">
-                      <p class="cart-product-weight-price">1,5 кг х <span class="lighter"> &nbsp; 300</span> &nbsp;
-                        руб.</p>
+                      <p class="cart-product-weight-price">1,5 кг х <span class="lighter">300&nbsp;руб.</span></p>
                     </div>
                     <div class="cart-popup-total"><span class="cart-product-total-price"> &nbsp;450 руб.</span></div>
                   </div>
                   <div class="stroke"></div>
-                  <p class="cart-overall-price"><span>Итого:</span><span class="overall-price"> &nbsp; 750 руб.</span></p>
+                  <p class="cart-overall-price"><span>Итого:</span><span class="overall-price">&nbsp;750 руб.</span></p>
                   <a href="#" class="btn cart-submit-btn" aria-label="Быстрый просмотр товара">Оформить заказ</a>
                 </div>
               </div>
@@ -180,24 +178,20 @@
               <legend>Жирность:</legend>
               <ul class="sort-filter-fat">
                 <li>
-                  <label class="sort-filter-fat-label" for="sort-fat-0">0%</label>
                   <input id="sort-fat-0" name="sort-fat" type="radio" value="0%">
-                  <div class="sort-filter-fat-radio"></div>
+                  <label class="sort-filter-fat-label" for="sort-fat-0" tabindex="0">0%</label>
                 </li>
                 <li>
-                  <label class="sort-filter-fat-label" for="sort-fat-lower10">до 10%</label>
                   <input id="sort-fat-lower10" name="sort-fat" type="radio" value="до 10%" checked>
-                  <div class="sort-filter-fat-radio"></div>
+                  <label class="sort-filter-fat-label" for="sort-fat-lower10" tabindex="0">до 10%</label>
                 </li>
                 <li>
-                  <label class="sort-filter-fat-label" for="sort-fat-lower30">до 30%</label>
                   <input id="sort-fat-lower30" name="sort-fat" type="radio" value="до 30%">
-                  <div class="sort-filter-fat-radio"></div>
+                  <label class="sort-filter-fat-label" for="sort-fat-lower30" tabindex="0">до 30%</label>
                 </li>
                 <li>
-                  <label class="sort-filter-fat-label" for="sort-fat-more30">выше 30%</label>
                   <input id="sort-fat-more30" name="sort-fat" type="radio" value="выше 30%">
-                  <div class="sort-filter-fat-radio"></div>
+                  <label class="sort-filter-fat-label" for="sort-fat-more30" tabindex="0">выше 30%</label>
                 </li>
               </ul>
             </fieldset>
@@ -205,28 +199,24 @@
               <legend>Наполнители</legend>
               <ul class="sort-filter-addings">
                 <li>
-                  <label for="addings-choco">шоколадные</label>
-                  <input id="addings-choco" type="checkbox" name="sort-form-addings" value="choco" checked>
-                  <div class="sort-filter-addings-check"></div>
+                  <input id="addings-choco" type="checkbox" name="sort-form-addings" value="choco" checked disabled>
+                  <label class="sort-filter-addings-label" for="addings-choco" tabindex="0">шоколадные</label>
                 </li>
                 <li>
-                  <label for="addings-shugar">сахарные присыпки </label>
                   <input id="addings-shugar" type="checkbox" name="sort-form-addings" value="sugar" checked>
-                  <div class="sort-filter-addings-check"></div>
+                  <label class="sort-filter-addings-label" for="addings-shugar" tabindex="0">сахарные присыпки </label>
                 </li>
                 <li>
-                  <label for="addings-fruits">фрукты</label>
                   <input id="addings-fruits" type="checkbox" name="sort-form-addings" value="fruits">
-                  <div class="sort-filter-addings-check"></div>
+                  <label class="sort-filter-addings-label" for="addings-fruits" tabindex="0">фрукты</label>
                 </li>
                 <li>
-                  <label for="addings-syrup">сиропы</label>
                   <input id="addings-syrup" type="checkbox" name="sort-form-addings" value="syrup">
-                  <div class="sort-filter-addings-check"></div>
+                  <label class="sort-filter-addings-label" for="addings-syrup" tabindex="0">сиропы</label>
                 </li>
-                <li><label for="addings-jam">джемы</label>
+                <li>
                   <input id="addings-jam" type="checkbox" name="sort-form-addings" value="jam">
-                  <div class="sort-filter-addings-check"></div>
+                  <label class="sort-filter-addings-label" for="addings-jam" tabindex="0">джемы</label>
                 </li>
               </ul>
             </fieldset>
@@ -246,7 +236,9 @@
                   Сливочное с апельсиновым джемом и цитрусовой стружкой
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -259,7 +251,9 @@
                   Сливочно-кофейное с кусочками шоколада
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -272,7 +266,9 @@
                   Сливочно-клубничное с присыпкой из белого шоколада
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -285,7 +281,9 @@
                   Сливочное крем-брюле с карамельной подливкой
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -298,7 +296,9 @@
                   Сливочное с брусничным джемом
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -311,7 +311,9 @@
                   Сливочно-черничное с цельными ягодами черники
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -324,7 +326,9 @@
                   Сливочно-лимонное с карамельной присыпкой
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -337,7 +341,9 @@
                   Сливочное с шоколодной стружкой
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -350,7 +356,9 @@
                   Сливочно-ванильное с кусочками шоколада
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -363,7 +371,9 @@
                   Сливочное с ментоловым сиропом
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -376,7 +386,9 @@
                   Сливочное с кусочками черного шоколада
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+               <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product">
@@ -389,7 +401,9 @@
                   Сливочное с Мятным сиропом
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
           </ul>
@@ -398,8 +412,8 @@
       <nav class="pagination">
         <h3 class="visually-hidden">Постраничная навигация</h3>
         <ul class="pagination-list">
-          <li class="pagination-child pagination-previos pagination-disabled"><a>&lt;</a></li>
-          <li class="pagination-child current-page"><a class="current-page">1</a></li>
+          <li class="pagination-child pagination-previos pagination-disabled"><a></a></li>
+          <li class="pagination-child current-page"><a class="current-page-link">1</a></li>
           <li class="pagination-child"><a href="#">2</a></li>
           <li class="pagination-child"><a href="#">3</a></li>
           <li class="pagination-child"><a href="#">4</a></li>
@@ -455,10 +469,8 @@
         </ul>
       </nav>
       <div class="branding">
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-link"><img class="footer-logo" src="img/logo-htmlacademy.svg"
-            width="108" height="39" alt="htmlacademy"></a>
-        <p class="branding-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="small-link">HTML
-            Academy</a> © 2017</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-link"><img class="footer-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="htmlacademy"></a>
+        <p class="branding-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="small-link">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </div>

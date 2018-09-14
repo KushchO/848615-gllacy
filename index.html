@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize-min.css">
   <link rel="stylesheet" href="css/glassy-min.css">
 </head>
 <body>
@@ -69,16 +69,20 @@
               <div class="modal-wrap">
                 <div class="modal form-wrap form-authorization-wrapper">
                   <h2 class="visually-hidden">Форма авторизации на сайте Gllacy</h2>
-                  <form class="authorization-form">
+                  <form class="authorization-form" id="main-authorization-form">
                     <label for="auth-e-mail-field" class="visually-hidden">Электронная почта</label>
                     <input id="auth-e-mail-field" type="email" name="authorization-form" placeholder="Электронная почта">
                     <label for="auth-password-field" class="visually-hidden">Пароль</label>
                     <input id="auth-password-field" type="password" name="authorization-form" placeholder="Пароль">
-                    <button type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
                   </form>
+                  <button form="main-authorization-form" type="submit" class="btn form-btn" aria-label="Авторизоваться на сайте">Войти</button>
                   <ul class="additional-links">
-                    <li><a href="#">Забыли пароль?</a></li>
-                    <li><a href="#">Новая регистрация</a></li>
+                    <li>
+                      <a href="#">Забыли пароль?</a>
+                    </li>
+                    <li>
+                      <a href="#">Новая регистрация</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -98,7 +102,7 @@
           </ul>
         </nav>
         <p class="main header-info">
-          С 10 до 20, ежедневно<br>
+          С 10 до 20, ежедневно
           <b>8 812 450-25-25</b>
         </p>
       </header>
@@ -119,13 +123,17 @@
             <h3 class="slide-title">
               Шоколадный пломбир и лимонный сорбет
             </h3>
-            <a class="button slide-button" href="#">Давайте оба!</a>
+            <a class="button slide-button" href="#">
+              Давайте оба!
+            </a>
           </li>
           <li class="slider-item slide" id="slide3">
             <h3 class="slide-title">
               Пломбир с помадкой и клубничный щербет
             </h3>
-            <a class="button slide-button" href="#">Давайте оба!</a>
+            <a class="button slide-button" href="#">
+              Давайте оба!
+            </a>
           </li>
         </ul>
       </section>
@@ -139,8 +147,7 @@
           </div>
           <div class="free-chocolate">
             <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
-              бесплатно.</p>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="btn take-offer" href="#">Хочу шоколадки!</a>
           </div>
         </section>
@@ -156,7 +163,9 @@
               <div class="title-wrapper">
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product chocolate">
@@ -168,7 +177,9 @@
               <div class="title-wrapper">
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product strawberry">
@@ -182,7 +193,9 @@
                   Сливочно-клубничное с присыпкой из белого шоколада
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
             <li class="product creme-brulee">
@@ -196,7 +209,9 @@
                   Сливочное крем-брюле с карамельной подливкой
                 </a>
               </div>
-              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">Быстрый просмотр</a>
+              <a href="#" class="btn product-link" aria-label="Быстрый просмотр товара">
+                Быстрый просмотр
+              </a>
               <div class="hover-block"></div>
             </li>
           </ul>
@@ -214,26 +229,26 @@
                 </p>
               </li>
               <li class="feature-list-entity">
-                <p class="farm-products">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
-                  компаний,
-                  с которыми нас связывает долговременное сотрудничество.</p>
+                <p class="farm-products">
+                  Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+                  с которыми нас связывает долговременное сотрудничество.
+                </p>
               </li>
               <li class="feature-list-entity">
-                <p class="ingredients">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-                  качества.
+                <p class="ingredients">
+                  Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
                   Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                 </p>
               </li>
               <li class="feature-list-entity">
-                <p class="termo-pack">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-                  который
+                <p class="termo-pack">
+                  Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который
                   не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                 </p>
               </li>
             </ul>
           </div>
         </section>
-        <!-- Я использую здесь section потому что article все же лучше использовать для самой статьи, а не её превью. -->
         <div class="wrapper-1">
           <section class="featured-blog-article">
             <h2>Новое в нашем блоге</h2>
@@ -244,9 +259,11 @@
           <section class="e-mail-subscribe">
             <div class="e-mail-subscribe-wrapper">
               <h2 class="visually-hidden">Подпишитесь на нашу e-mail рассылку</h2>
-              <p class="subscribe-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+              <p class="subscribe-info">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
                 вкусного,
-                что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
               <form class="e-mail-subscribe-form" action="https://echo.htmlacademy.ru">
                 <input class="e-mail-subscribe-input" type="email" name="e-mail-subscribe-field" placeholder="Электронная почта"
                   aria-label="Ваш имейл для новоостей">
@@ -262,7 +279,6 @@
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4643dce98cdf7291c4cccc6e1c93f6ddd89b4ced56ede997fa52d6a2b93fb2f1&amp;source=constructor"
             width="1200" height="428"></iframe>
         </div>
-        <!-- Наверное указатель на карте делается через сервис яндекс карты, но на всякий случай добавил элемент для нее явно. Можно сделать через ::before или ::after Но думаю все это плохо будет работать в резиновом варианте -->
         <span class="ice-pointer"></span>
         <section class="modal main-contacts">
           <h3 class="visually-hidden">Контакты</h3>
@@ -325,10 +341,8 @@
           </ul>
         </nav>
         <div class="branding">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-link"><img class="footer-logo" src="img/logo-htmlacademy.svg"
-              width="108" height="39" alt="htmlacademy"></a>
-          <p class="branding-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="small-link">HTML
-              Academy</a> © 2017</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-link"><img class="footer-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="htmlacademy"></a>
+          <p class="branding-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="small-link">HTML Academy</a> © 2017</p>
         </div>
       </footer>
     </div>
@@ -340,7 +354,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <input type="text" name="feedback-form-name" placeholder="Как вас зовут?">
         <input type="email" name="feedback-form-email" placeholder="Ваша почта для ответа">
-        <textarea class="feedback-text" name="feedback-form-message" cols="51" rows="5" placeholder="Напишите что-нибукдь..."></textarea>
+        <textarea class="feedback-text" name="feedback-form-message" cols="51" rows="5" placeholder="Напишите что-нибудь..."></textarea>
         <button type="submit" class="btn feedback-btn">Отправить</button>
       </form>
       <button type="button" class="feedback-close" aria-label="Закрыть окно обратной связи">X</button>
